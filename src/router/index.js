@@ -3,6 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import Categoria from '../views/Categoria.vue'
 import EditarCategoria from '../components/Categoria/EditarCategoria.vue'
 import NewCategoria from '../components/Categoria/NewCategoria.vue'
+import PayMode  from '../views/PayMode.vue'
+import EditarPayMode from '../components/PayMode/EditarPayMode.vue'
+import NewPayMode from '../components/PayMode/NewPayMode.vue'
 
 const routes = [
   {
@@ -29,6 +32,21 @@ const routes = [
     path: '/categorias/nueva',
     name: 'NewCategoria',
     component: NewCategoria
+},
+{
+  path: '/paymodes',
+  name: 'paymodes',
+  component: PayMode
+},
+{
+  path: '/paymodes/editar/:id',
+  name: 'EditarPayMode',
+  component: EditarPayMode
+},
+{
+  path: '/paymodes/nueva',
+  name: 'NewPayMode',
+  component: NewPayMode
 }
 ]
 
