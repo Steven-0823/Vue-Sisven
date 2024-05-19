@@ -9,6 +9,9 @@ import NewPayMode from '../components/PayMode/NewPayMode.vue'
 import Customer from '../views/Customer.vue'
 import EditarCustomer from '../components/Customer/EditarCustomer.vue'
 import NewCustomer from '../components/Customer/NewCustomer.vue'
+import Producto from '../views/Producto.vue'
+import EditarProducto from '../components/Producto/EditarProducto.vue'
+import NewProducto from '../components/Producto/NewProducto.vue'
 
 const routes = [
   {
@@ -65,7 +68,25 @@ const routes = [
     path: '/customers/nueva',
     name: 'NewCustomer',
     component: NewCustomer
+  },
+  {
+    path: '/productos',
+    name: 'productos',
+    component: Producto
+  },
+  {
+    path: '/productos/editar/:id',
+    name: 'EditarProducto',
+    component: EditarProducto
+  },
+  {
+    path: '/productos/nuevo',
+    name: 'NewProducto',
+    component: NewProducto
   }
+  
+  
+  
 ]
 
 const router = createRouter({
